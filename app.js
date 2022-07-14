@@ -6,7 +6,7 @@ const clear = document.querySelector('#clear')
 
 let tasks = []
 
- for (let i = 0; i <= localStorage.length; i++) {
+ for (let i = 0; i < localStorage.length; i++) {
         let taskPop = localStorage.getItem(`task${i}`)
         console.log(taskPop)
         tasks.push(taskPop);
